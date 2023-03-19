@@ -23,6 +23,7 @@ def main():
     n = 0
     m = 0
     data = []
+
     ievade=input()
     if "I" in ievade:
         n, m = map(int, input().split())
@@ -30,7 +31,6 @@ def main():
 
     # second line - data 
     # data - contains m integers t(i) - the times in seconds it takes any thread to process i-th job
-    
 
     # TODO: create the function
     result = parallel_processing(n,m,data)
@@ -39,7 +39,6 @@ def main():
     for threads_sk, sakuma_t in result:
             print(threads_sk, sakuma_t)
 
-
-
 if __name__ == "__main__":
     main()
+
